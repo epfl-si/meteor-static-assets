@@ -3,7 +3,7 @@ import meteorProjectPath from 'meteor-project-path';
 import path from 'path';
 import sha1 from './sha1';
 
-global.nathantreidStaticAssets = global.nathantreidStaticAssets || { lastNotifiedHash: null, };
+global.epflStaticAssets = global.epflStaticAssets || { lastNotifiedHash: null, };
 const optionsFilePath = path.join(meteorProjectPath || '', 'package.json');
 
 const defaultOptions = {
@@ -29,12 +29,12 @@ function loadOptions() {
   options = { ...defaultOptions, ...userOptions };
   options.hash = sha1(JSON.stringify(options));
 
-  if (previousHash && previousHash !== options.hash && global.nathantreidStaticAssets.lastNotifiedHash !== options.hash) {
-    global.nathantreidStaticAssets.lastNotifiedHash = options.hash;
-    console.info('nathantreid:static-assets plugin options updated, recompiling all static assets.');
+  if (previousHash && previousHash !== options.hash && global.epflStaticAssets.lastNotifiedHash !== options.hash) {
+    global.epflStaticAssets.lastNotifiedHash = options.hash;
+    console.info('epfl:static-assets plugin options updated, recompiling all static assets.');
 
     if (JSON.stringify(options.extensions) !== initialExtensions) {
-      console.warn(`The list of extensions handled by the nathantreid:static-assets plugin has changed to: ${options.extensions}.\nThis change requires a manual Meteor restart to take effect.\n`)
+      console.warn(`The list of extensions handled by the epfl:static-assets plugin has changed to: ${options.extensions}.\nThis change requires a manual Meteor restart to take effect.\n`)
     }
   }
 }

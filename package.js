@@ -1,9 +1,9 @@
 Package.describe({
-  name: 'nathantreid:static-assets',
+  name: 'epfl:static-assets',
   version: '0.1.0',
   summary: 'Import any static assets you like!',
   documentation: 'README.md',
-  git: 'https://github.com/nathantreid/meteor-static-assets.git',
+  git: 'https://github.com/epfl-si/meteor-static-assets.git',
 });
 
 Package.registerBuildPlugin({
