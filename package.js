@@ -9,7 +9,7 @@ Package.describe({
 Package.registerBuildPlugin({
   name: 'static-assets',
   use: [
-    'caching-compiler@1.2.0',
+    'caching-compiler@2.0.0-alpha300.17',
     'ecmascript@0.12.0',
   ],
   sources: [
