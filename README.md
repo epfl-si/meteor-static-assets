@@ -5,7 +5,7 @@ Static Assets Compiler for Meteor
 1. Install the package
 
 ```bash
-meteor add nathantreid:static-assets
+meteor add epfl:static-assets
 ```
 
 ## Usage
