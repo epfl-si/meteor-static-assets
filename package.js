@@ -1,6 +1,6 @@
 Package.describe({
   name: 'epfl:static-assets',
-  version: '0.1.0',
+  version: '0.1.1',
   summary: 'Import any static assets you like!',
   documentation: 'README.md',
   git: 'https://github.com/epfl-si/meteor-static-assets.git',
